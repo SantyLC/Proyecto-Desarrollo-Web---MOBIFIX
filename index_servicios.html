@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Servicios | MobiFix</title>
+  <meta name="description" content="Cambio de pantalla, batería, puerto de carga, software, diagnóstico y mantenimiento de celulares en Sahagún, Córdoba.">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <header class="site-header border-bottom">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <i class="bi bi-phone brand-icon"></i>
+          <span class="lh-1">
+            <span class="d-block fw-bold">MOBIFIX</span>
+            <small class="brand-sub">SERVICIO TÉCNICO MÓVIL</small>
+          </span>
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#menuMovil" aria-controls="menuMovil" aria-label="Abrir menú">
+          <i class="bi bi-list fs-1"></i>
+        </button>
+
+        <ul class="navbar-nav ms-auto d-none d-lg-flex flex-row gap-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index_servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="index_informacion.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="index_contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="offcanvas offcanvas-top menu-movil" tabindex="-1" id="menuMovil" aria-labelledby="menuMovilTitulo">
+    <div class="offcanvas-header border-bottom">
+      <div class="d-flex align-items-center gap-2" id="menuMovilTitulo">
+        <i class="bi bi-phone brand-icon"></i>
+        <span class="lh-1">
+          <span class="d-block fw-bold">MOBIFIX</span>
+          <small class="brand-sub">SERVICIO TÉCNICO MÓVIL</small>
+        </span>
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar menú"></button>
+    </div>
+    <div class="offcanvas-body p-0">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><a href="index.html"><i class="bi bi-house-door-fill"></i> Inicio</a></li>
+        <li class="list-group-item"><a href="index_servicios.html"><i class="bi bi-wrench-adjustable"></i> Servicios</a></li>
+        <li class="list-group-item"><a href="index_informacion.html"><i class="bi bi-people-fill"></i> Nosotros</a></li>
+        <li class="list-group-item"><a href="index_contacto.html"><i class="bi bi-envelope-fill"></i> Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main class="flex-grow-1">
+
+    <section class="hero container py-5">
+      <div class="row align-items-center g-4 g-lg-5">
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold mb-3">
+            Soluciones especializadas <span class="text-acento">para tu celular</span>
+          </h1>
+          <p class="lead text-secondary mb-0">
+            Contamos con técnicos expertos y repuestos de calidad para garantizar el mejor servicio en cada reparación.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <img src="img/imagen_servicio_principal.jpg" class="img-fluid rounded" alt="imagen servicio principal">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container pb-5">
+      <h2 class="h3 fw-bold text-center mb-4">Nuestros servicios principales</h2>
+
+      <div class="row g-3">
+
+        <div class="col-6 col-lg-4">
+          <div class="card tarjeta h-100">
+            <div class="card-body">
+              <h3 class="h6 d-flex align-items-center gap-2 mb-2"><i class="bi bi-phone fs-5"></i> Cambio de pantalla</h3>
+              <p class="small text-secondary">Reemplazamos pantallas dañadas o con fallas por nuevas y originales.</p>
+              <a href="#" class="small fw-semibold stretched-link" data-bs-toggle="modal" data-bs-target="#modalPantalla">Ver más <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-4">
+          <div class="card tarjeta h-100">
+            <div class="card-body">
+              <h3 class="h6 d-flex align-items-center gap-2 mb-2"><i class="bi bi-battery-full fs-5"></i> Cambio de batería</h3>
+              <p class="small text-secondary">Mejora el rendimiento de tu celular con baterías de alta calidad.</p>
+              <a href="#" class="small fw-semibold stretched-link" data-bs-toggle="modal" data-bs-target="#modalBateria">Ver más <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-4">
+          <div class="card tarjeta h-100">
+            <div class="card-body">
+              <h3 class="h6 d-flex align-items-center gap-2 mb-2"><i class="bi bi-plug fs-5"></i> Puerto de carga</h3>
+              <p class="small text-secondary">Reparamos puertos de carga dañados para que tu celular cargue correctamente.</p>
+              <a href="#" class="small fw-semibold stretched-link" data-bs-toggle="modal" data-bs-target="#modalPuerto">Ver más <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-4">
+          <div class="card tarjeta h-100">
+            <div class="card-body">
+              <h3 class="h6 d-flex align-items-center gap-2 mb-2"><i class="bi bi-gear fs-5"></i> Software</h3>
+              <p class="small text-secondary">Solucionamos errores de sistema, bloqueos y actualizaciones.</p>
+              <a href="#" class="small fw-semibold stretched-link" data-bs-toggle="modal" data-bs-target="#modalSoftware">Ver más <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-4">
+          <div class="card tarjeta h-100">
+            <div class="card-body">
+              <h3 class="h6 d-flex align-items-center gap-2 mb-2"><i class="bi bi-clipboard2-pulse fs-5"></i> Diagnóstico técnico</h3>
+              <p class="small text-secondary">Identificamos el problema de tu dispositivo de forma rápida y precisa.</p>
+              <a href="#" class="small fw-semibold stretched-link" data-bs-toggle="modal" data-bs-target="#modalDiagnostico">Ver más <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-4">
+          <div class="card tarjeta h-100">
+            <div class="card-body">
+              <h3 class="h6 d-flex align-items-center gap-2 mb-2"><i class="bi bi-tools fs-5"></i> Mantenimiento</h3>
+              <p class="small text-secondary">Limpieza interna y externa para alargar la vida útil de tu celular.</p>
+              <a href="#" class="small fw-semibold stretched-link" data-bs-toggle="modal" data-bs-target="#modalMantenimiento">Ver más <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <div class="modal fade" id="modalPantalla" tabindex="-1" aria-labelledby="tituloPantalla" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable modal-fullscreen-md-down">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal"><i class="bi bi-arrow-left"></i> Volver a servicios</button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row align-items-center g-4 mb-4">
+            <div class="col-lg-6">
+              <h2 class="display-6 fw-bold" id="tituloPantalla">Cambio de <span class="text-acento">pantalla</span></h2>
+              <p class="text-secondary">Reemplazamos pantallas dañadas o con fallas por nuevas y originales, devolviendo la imagen y funcionalidad perfecta a tu celular.</p>
+              <a href="index_contacto.html" class="btn btn-dark">Solicitar reparación <i class="bi bi-chat-fill ms-1"></i></a>
+            </div>
+            <div class="col-lg-6">
+              <div class="hero-imagen ratio ratio-16x9 rounded border" role="img" aria-label="Imagen del servicio (pendiente)">
+                <div class="d-flex align-items-center justify-content-center text-secondary"><i class="bi bi-image fs-1"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-lg-4"><div class="card tarjeta h-100"><div class="card-body">
+              <h3 class="h5 d-flex align-items-center gap-2"><i class="bi bi-question-circle-fill"></i> ¿Qué problema soluciona?</h3>
+              <p class="small text-secondary mb-0">Pantallas rotas, con rayas, manchas, parpadeos, táctil que no responde o display que no enciende.</p>
+            </div></div></div>
+            <div class="col-lg-4"><div class="card tarjeta h-100"><div class="card-body">
+              <h3 class="h5 d-flex align-items-center gap-2"><i class="bi bi-shield-fill-check"></i> ¿Qué incluye el servicio?</h3>
+              <ul class="small text-secondary mb-0 ps-3">
+                <li>Reemplazo de pantalla por repuesto de alta calidad.</li>
+                <li>Instalación profesional por técnicos expertos.</li>
+                <li>Pruebas completas antes de la entrega.</li>
+                <li>Limpieza interna y externa del equipo.</li>
+                <li>Garantía por el trabajo realizado.</li>
+              </ul>
+            </div></div></div>
+            <div class="col-lg-4"><div class="card tarjeta h-100"><div class="card-body">
+              <h3 class="h5 d-flex align-items-center gap-2"><i class="bi bi-phone"></i> Dispositivos compatibles</h3>
+              <p class="small text-secondary mb-0">Trabajamos con las principales marcas y modelos del mercado.</p>
+            </div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalBateria" tabindex="-1" aria-labelledby="tituloBateria" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable modal-fullscreen-md-down">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal"><i class="bi bi-arrow-left"></i> Volver a servicios</button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row align-items-center g-4 mb-4">
+            <div class="col-lg-6">
+              <h2 class="display-6 fw-bold" id="tituloBateria">Cambio de <span class="text-acento">batería</span></h2>
+              <p class="text-secondary">Mejoramos el rendimiento de tu celular instalando baterías de alta calidad, para que vuelva a durar todo el día.</p>
+              <a href="index_contacto.html" class="btn btn-dark">Solicitar reparación <i class="bi bi-chat-fill ms-1"></i></a>
+            </div>
+            <div class="col-lg-6">
+              <div class="hero-imagen ratio ratio-16x9 rounded border" role="img" aria-label="Imagen del servicio (pendiente)">
+                <div class="d-flex align-items-center justify-content-center text-secondary"><i class="bi bi-image fs-1"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-lg-4"><div class="card tarjeta h-100"><div class="card-body">
+              <h3 class="h5 d-flex align-items-center gap-2"><i class="bi bi-question-circle-fill"></i> ¿Qué problema soluciona?</h3>
+              <p class="small text-secondary mb-0">Batería que se descarga rápido, celular que se apaga solo, calentamiento excesivo o batería hinchada.</p>
+            </div></div></div>
+            <div class="col-lg-4"><div class="card tarjeta h-100"><div class="card-body">
+              <h3 class="h5 d-flex align-items-center gap-2"><i class="bi bi-shield-fill-check"></i> ¿Qué incluye el servicio?</h3>
+              <ul class="small text-secondary mb-0 ps-3">
+                <li>Batería nueva de alta calidad.</li>
+                <li>Instalación profesional por técnicos expertos.</li>
+                <li>Prueba de carga y descarga antes de la entrega.</li>
+                <li>Revisión del sistema de carga.</li>
+                <li>Garantía por el trabajo realizado.</li>
+              </ul>
+            </div></div></div>
+            <div class="col-lg-4"><div class="card tarjeta h-100"><div class="card-body">
+              <h3 class="h5 d-flex align-items-center gap-2"><i class="bi bi-phone"></i> Dispositivos compatibles</h3>
+              <p class="small text-secondary mb-0">Trabajamos con las principales marcas y modelos del mercado.</p>
+            </div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalPuerto" tabindex="-1" aria-labelledby="tituloPuerto" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable modal-fullscreen-md-down">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal"><i class="bi bi-arrow-left"></i> Volver a servicios</button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row align-items-center g-4 mb-4">
+            <div class="col-lg-6">
+              <h2 class="display-6 fw-bold" id="tituloPuerto">Puerto de <span class="text-acento">carga</span></h2>
+              <p class="text-secondary">Reparamos o reemplazamos puertos de carga dañados para que tu celular cargue de forma correcta y estable.</p>
+              <a href="index_contacto.html" class="btn btn-dark">Solicitar reparación <i class="bi bi-chat-fill ms-1"></i></a>
+            </div>
+            <div class="col-lg-6">
+              <div class="hero-imagen ratio ratio-16x9 rounded border" role="img" aria-label="Imagen del servicio (pendiente)">
+                <div class="d-flex align-items-center justify-content-center text-secondary"><i class="bi bi-image fs-1"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-lg-4"><div class="card tarjeta h-100"><div class="card-body">
+              <h3 class="h5 d-flex align-items-center gap-2"><i class="bi bi-question-circle-fill"></i> ¿Qué problema soluciona?</h3>
+              <p class="small text-secondary mb-0">El celular no carga, carga lento, el cable se mueve o solo carga en cierta posición.</p>
+            </div></div></div>
+            <div class="col-lg-4"><div class="card tarjeta h-100"><div class="card-body">
+              <h3 class="h5 d-flex align-items-center gap-2"><i class="bi bi-shield-fill-check"></i> ¿Qué incluye el servicio?</h3>
+              <ul class="small text-secondary mb-0 ps-3">
+                <li>Limpieza o cambio del puerto de carga.</li>
+                <li>Instalación profesional por técnicos expertos.</li>
+                <li>Prueba de carga antes de la entrega.</li>
+                <li>Revisión del cable y del cargador.</li>
+                <li>Garantía por el trabajo realizado.</li>
+              </ul>
+            </div></div></div>
+            <div class="col-lg-4"><div class="card tarjeta h-100"><div class="card-body">
+              <h3 class="h5 d-flex align-items-center gap-2"><i class="bi bi-phone"></i> Dispositivos compatibles</h3>
+              <p class="small text-secondary mb-0">Trabajamos con las principales marcas y modelos del mercado.</p>
+            </div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalSoftware" tabindex="-1" aria-labelledby="tituloSoftware" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable modal-fullscreen-md-down">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal"><i class="bi bi-arrow-left"></i> Volver a servicios</button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row align-items-center g-4 mb-4">
+            <div class="col-lg-6">
+              <h2 class="display-6 fw-bold" id="tituloSoftware">Servicio de <span class="text-acento">software</span></h2>
+              <p class="text-secondary">Solucionamos errores del sistema, bloqueos y problemas de actualización para que tu celular funcione como nuevo.</p>
+              <a href="index_contacto.html" class="btn btn-dark">Solicitar reparación <i class="bi bi-chat-fill ms-1"></i></a>
+            </div>
+            <div class="col-lg-6">
+              <div class="hero-imagen ratio ratio-16x9 rounded border" role="img" aria-label="Imagen del servicio (pendiente)">
+                <div class="d-flex align-items-center justify-content-center text-secondary"><i class="bi bi-image fs-1"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-lg-4"><div class="card tarjeta h-100"><div class="card-body">
+              <h3 class="h5 d-flex align-items-center gap-2"><i class="bi bi-question-circle-fill"></i> ¿Qué problema soluciona?</h3>
+              <p class="small text-secondary mb-0">Celular lento, que se reinicia solo, bloqueado, con errores de sistema o aplicaciones que se cierran.</p>
+            </div></div></div>
+            <div class="col-lg-4"><div class="card tarjeta h-100"><div class="card-body">
+              <h3 class="h5 d-flex align-items-center gap-2"><i class="bi bi-shield-fill-check"></i> ¿Qué incluye el servicio?</h3>
+              <ul class="small text-secondary mb-0 ps-3">
+                <li>Revisión y corrección de errores del sistema.</li>
+                <li>Actualización del sistema y de las aplicaciones.</li>
+                <li>Optimización del rendimiento.</li>
+                <li>Recuperación de acceso por fallas de configuración.</li>
+                <li>Garantía por el trabajo realizado.</li>
+              </ul>
+            </div></div></div>
+            <div class="col-lg-4"><div class="card tarjeta h-100"><div class="card-body">
+              <h3 class="h5 d-flex align-items-center gap-2"><i class="bi bi-phone"></i> Dispositivos compatibles</h3>
+              <p class="small text-secondary mb-0">Trabajamos con las principales marcas y modelos del mercado.</p>
+            </div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalDiagnostico" tabindex="-1" aria-labelledby="tituloDiagnostico" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable modal-fullscreen-md-down">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal"><i class="bi bi-arrow-left"></i> Volver a servicios</button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row align-items-center g-4 mb-4">
+            <div class="col-lg-6">
+              <h2 class="display-6 fw-bold" id="tituloDiagnostico">Diagnóstico <span class="text-acento">técnico</span></h2>
+              <p class="text-secondary">Identificamos el problema de tu dispositivo de forma rápida y precisa, antes de hacer cualquier reparación.</p>
+              <a href="index_contacto.html" class="btn btn-dark">Solicitar revisión <i class="bi bi-chat-fill ms-1"></i></a>
+            </div>
+            <div class="col-lg-6">
+              <div class="hero-imagen ratio ratio-16x9 rounded border" role="img" aria-label="Imagen del servicio (pendiente)">
+                <div class="d-flex align-items-center justify-content-center text-secondary"><i class="bi bi-image fs-1"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-lg-4"><div class="card tarjeta h-100"><div class="card-body">
+              <h3 class="h5 d-flex align-items-center gap-2"><i class="bi bi-question-circle-fill"></i> ¿Qué problema soluciona?</h3>
+              <p class="small text-secondary mb-0">Fallas que no tienen una causa clara: el equipo no enciende, se apaga, se calienta o presenta errores constantes.</p>
+            </div></div></div>
+            <div class="col-lg-4"><div class="card tarjeta h-100"><div class="card-body">
+              <h3 class="h5 d-flex align-items-center gap-2"><i class="bi bi-shield-fill-check"></i> ¿Qué incluye el servicio?</h3>
+              <ul class="small text-secondary mb-0 ps-3">
+                <li>Revisión de hardware y software.</li>
+                <li>Uso de herramientas de diagnóstico especializadas.</li>
+                <li>Explicación clara de la falla encontrada.</li>
+                <li>Precio estimado de la reparación.</li>
+                <li>Sin compromiso de reparar.</li>
+              </ul>
+            </div></div></div>
+            <div class="col-lg-4"><div class="card tarjeta h-100"><div class="card-body">
+              <h3 class="h5 d-flex align-items-center gap-2"><i class="bi bi-phone"></i> Dispositivos compatibles</h3>
+              <p class="small text-secondary mb-0">Revisamos celulares y tabletas de las principales marcas y modelos del mercado.</p>
+            </div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalMantenimiento" tabindex="-1" aria-labelledby="tituloMantenimiento" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable modal-fullscreen-md-down">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal"><i class="bi bi-arrow-left"></i> Volver a servicios</button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row align-items-center g-4 mb-4">
+            <div class="col-lg-6">
+              <h2 class="display-6 fw-bold" id="tituloMantenimiento"><span class="text-acento">Mantenimiento</span> preventivo</h2>
+              <p class="text-secondary">Limpieza interna y externa para alargar la vida útil de tu celular y evitar fallas a futuro.</p>
+              <a href="index_contacto.html" class="btn btn-dark">Solicitar mantenimiento <i class="bi bi-chat-fill ms-1"></i></a>
+            </div>
+            <div class="col-lg-6">
+              <div class="hero-imagen ratio ratio-16x9 rounded border" role="img" aria-label="Imagen del servicio (pendiente)">
+                <div class="d-flex align-items-center justify-content-center text-secondary"><i class="bi bi-image fs-1"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-lg-4"><div class="card tarjeta h-100"><div class="card-body">
+              <h3 class="h5 d-flex align-items-center gap-2"><i class="bi bi-question-circle-fill"></i> ¿Qué problema soluciona?</h3>
+              <p class="small text-secondary mb-0">Sobrecalentamiento, ruido en parlantes o micrófono, suciedad acumulada y bajo rendimiento por desgaste.</p>
+            </div></div></div>
+            <div class="col-lg-4"><div class="card tarjeta h-100"><div class="card-body">
+              <h3 class="h5 d-flex align-items-center gap-2"><i class="bi bi-shield-fill-check"></i> ¿Qué incluye el servicio?</h3>
+              <ul class="small text-secondary mb-0 ps-3">
+                <li>Limpieza interna de componentes.</li>
+                <li>Limpieza externa y de puertos.</li>
+                <li>Optimización del sistema.</li>
+                <li>Revisión general del equipo.</li>
+                <li>Recomendaciones de cuidado.</li>
+              </ul>
+            </div></div></div>
+            <div class="col-lg-4"><div class="card tarjeta h-100"><div class="card-body">
+              <h3 class="h5 d-flex align-items-center gap-2"><i class="bi bi-phone"></i> Dispositivos compatibles</h3>
+              <p class="small text-secondary mb-0">Trabajamos con las principales marcas y modelos del mercado.</p>
+            </div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer border-top pt-4">
+    <div class="container">
+      <div class="row g-4 pb-4">
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <i class="bi bi-phone brand-icon"></i>
+            <span class="lh-1">
+              <span class="d-block fw-bold">MOBIFIX</span>
+              <small class="brand-sub">SERVICIO TÉCNICO MÓVIL</small>
+            </span>
+          </div>
+          <p class="small text-secondary mb-3">Soluciones confiables para tu dispositivo móvil. Claridad, rapidez y garantía.</p>
+          <div class="redes d-flex gap-3 fs-4">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <i class="bi bi-geo-alt-fill fs-5"></i>
+          <h2 class="h6 mt-2">¿Dónde estamos?</h2>
+          <p class="small text-secondary mb-1">Sahagún, Córdoba, Colombia</p>
+          <a class="small" href="https://maps.google.com/?q=Sahagún,+Córdoba,+Colombia" target="_blank" rel="noopener">Ver en Google Maps <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <i class="bi bi-clock-fill fs-5"></i>
+          <h2 class="h6 mt-2">Horario de atención</h2>
+          <p class="small text-secondary mb-0">Lunes a Sábado<br>8:00 a.m. - 6:00 p.m.</p>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <i class="bi bi-whatsapp fs-5"></i>
+          <h2 class="h6 mt-2">¿Prefieres escribirnos?</h2>
+          <p class="small text-secondary">Chatea con nosotros por WhatsApp</p>
+          <a class="btn btn-whatsapp w-100" href="https://wa.me/573225640018" target="_blank" rel="noopener">Escribir ahora <i class="bi bi-whatsapp ms-1"></i></a>
+        </div>
+
+      </div>
+      <div class="border-top py-3 text-center small text-secondary">
+        © 2026 MOBIFIX - Servicio Técnico Móvil. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/573225640018?text=Hola%2C%20quisiera%20información%20sobre%20una%20reparación"
+     class="whatsapp-flotante" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
